@@ -1,0 +1,11 @@
+{
+  "name": "audio-bash-utils",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "nelson kenzo tamashiro <nelsonkenzotamashiro@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.8.3",
+    "typescript": "^5.2.2"
+  }
+}
