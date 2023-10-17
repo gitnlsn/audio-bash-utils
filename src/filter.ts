@@ -14,8 +14,8 @@ export const filter = async ({ inputFile, outputFile }: FilterProps) => {
   });
 
   await execPromise(`
-    ffmpeg -i "${inputFile}" -af "highpass=f=200, lowpass=f=3000" -f wav pipe:1 |
-    ffmpeg -i pipe: -af "afftdn=nf=-20:nr=97" ${tempFile}
+    ffmpeg -i "${inputFile}" -af "highpass=f=300, lowpass=f=3000" -f wav pipe:1 |
+    ffmpeg -i pipe: -af "afftdn=nf=-50:nr=97" ${tempFile}
     `);
 
   const rmsValue = await rms({ filePath: tempFile });
